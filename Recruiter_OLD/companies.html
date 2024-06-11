@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Companies</title>
+    
+    <!-- fetching jquery from server is preferred for speed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+    
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#companyTable').DataTable();
+        });
+    </script>
+
+<!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+<body>
+    <table id="companyTable">
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>Website</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anant Singh</td>
+                <td>www.mukullr.com</td>
+                <td>8618899847</td>
+                <td>Rashtrapati Bhavan</td>
+                <td>New Delhi</td>
+                <td>Delhi</td>
+                <td>India</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function dataTable() {
+
+        $(document).ready( function () {
+            $('#companyTable').DataTable();
+        } );
+        }
+
+    </script>
+
+</body>
+</html>
